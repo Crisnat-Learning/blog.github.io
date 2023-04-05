@@ -1,0 +1,40 @@
+[
+  {
+    "serialNo": 1,
+    "title": "The Bermuda Triangle",
+    "description": "The Bermuda Triangle, also known as the Devil's Triangle, is a loosely defined region in the western part of the North Atlantic Ocean where a number of aircraft and ships are said to have disappeared under mysterious circumstances. Most reputable sources dismiss the idea that there is any mystery.",
+    "imageUrl": "./assets/bermuda.jpg"
+  },
+  {
+    "serialNo": 2,
+    "title": "The Monolith",
+    "description": "In Arthur C. Clarke's Space Odyssey, Monoliths are machines built by an unseen extraterrestrial species. In the series of novels, three Monoliths are discovered in the Solar System by hominids and humans. The response of the characters to their discovery drives the plot of the series. <br>Here are the list of countries where monoliths are found:<br><br><b>India - December 29, 2020</b><br>On December 29, 2020, a monolith appeared at Symphony Forest Park in Ahmedabad, Gujarat. One of the panels features etched numbers, relating to longitudes and latitudes of wildlife parks in India. The anonymous artist said in an interview that 'The monolith is shrouded in mystery around the world because people enjoy the mystery of unlocking new ideas and unlocking new thoughts. And this was my contribution to that — engagement of thinking.' <br><br><b>Morocco</b><br>On December 10, 2020, a monolith was reported in a construction site in Zenata near Casablanca. Upon investigation, it was determined that the structure was installed by the chemicals and logistics company 'Top Negoce' as part of a communication campaign for its new robot 'Aya', made in partnership with a Silicon Valley company, and that the robot in question is reportedly trapped inside the structure. <br><br><b>Austria</b><br>On December 6, 2020, a monolith appeared in Katschberg, near the B99 road, It disappeared shortly after. On December 10, 2020, the same monolith previously seen in Katschberg was spotted on a golf course, in the district of Tamsweg, Salzburg. On December 14, 2020, another monolith was found on a field in Peuerbach in Upper Austria.",
+    "imageUrl": "./assets/monolith.jpg"
+  },
+  {
+    "serialNo": 3,
+    "title": "The Mariana Trench",
+    "description": "Sunlight hasn't hit the bottom in a billion years. Water below freezing point at one step and hot springs at another. Bone crushing pressure and a landscape often described as 'lunar like'. Below about 11 thousand meters of sea level exists an underwater world full of mystery and immense possibilities for scientists to research. This is the story of the world's deepest place- Mariana Trench.",
+    "imageUrlPreview": "./assets/MTrench2.jpg",
+    "imageUrl":"./assets/MTrench.jpg"
+  },
+  {
+    "serialNo": 4,
+    "title": "The Red Sea",
+    "description": "A variety of exotic threads are woven into the tapestry that produce the Red Sea's unusual oceanographic phenomena: seasonal monsoons, desert sandstorms, wind jets through narrow mountain gaps, the Strait of Bab Al Mandeb that squeezes passage in and out of the sea—even locust swarms.",
+    "imageUrlPreview": "./assets/redsea2.jpg",
+    "imageUrl": "./assets/redsea.jpg"
+  },
+  {
+    "serialNo": 5,
+    "title": "The Svalbard Island",
+    "description": "The northern parts of Norway are the best places in the world to see the northern lights, one of which is The Svalbard Island, as this part of the country lies just below the auroral oval.The fact, that these lights appear so amazing is that when atoms and molecules in the upper atmosphere are hit by high energy electrons, the aurora beams are produced.",
+    "imageUrl": "./assets/svalbard.jpg"
+  },
+  {
+    "serialNo": 6,
+    "title": "The Fairy Pools",
+    "description": "At foot of the Black Cuillins near Glenbrittle are the Fairy Pools, beautifully crystal clear blue pools on the River Brittle.On a sunny day, the turquoise waters of the natural pools are so clear, one can readily see each moss-covered stone at the bottom. The area is also host to a large number of birds. Large flocks of crows, ravens, and gulls are present in the area, as well as such smaller birds as meadow pipits, turnstones, common ringed plovers, grey herons, dunlins, and curlews. The physical landscape is predominantly rocky, with some boggy areas here and there. The water in the area is typically cold, as the pools are fed by mountain streams. The waters of the Fairy Pools might be bone-chillingly cold, but their near supernatural atmosphere has made them one of Scotland’s most enduring natural wonders.",
+    "imageUrl": "./assets/FairyPools.jpg"
+  }
+]
