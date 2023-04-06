@@ -7,6 +7,8 @@ import { BlogData } from './models/interfaces/blog.interface';
 })  
 export class DataService {
 
+  private sharedData: any;
+
   data: BlogData[] = [];
   constructor(){}
   
@@ -14,5 +16,15 @@ export class DataService {
     this.data = jsonData.map((item:BlogData)=>Object.assign({},item)) as BlogData[];
     return this.data;
   }
+
+
+  setSharedData(data: any) {
+    this.sharedData = data;
+  }
+
+  getSharedData() {
+    return this.sharedData;
+  }
+
 
 }
