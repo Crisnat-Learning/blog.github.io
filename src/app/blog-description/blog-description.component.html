@@ -1,1 +1,21 @@
-<p>blog-description works!</p>
+<section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="lg:w-4/5 mx-auto flex flex-wrap">
+        <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src={{data.imageUrl}}>
+            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+            <h2 class="text-sm title-font text-gray-500 tracking-widest">Crisnat Blog</h2>
+            <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{data.title}}</h1>
+            <p class="leading-relaxed" *ngIf="data.innerHtml!==undefined" innerHtml="{{data.innerHtml}}"></p>
+            <p class="leading-relaxed" *ngIf="data.innerHtml===undefined">{{data.description}}</p>
+            <b><a target="_blank" *ngIf="data.moreDetailUrl!==undefined && data.moreDetailText!==undefined" href={{data.moreDetailUrl}}>{{data.moreDetailText}}</a></b>
+            <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+            </div>
+            <div class="flex">
+            <a routerLink="/">
+                <button class="flex ml-auto text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded">Go to Home</button>
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>

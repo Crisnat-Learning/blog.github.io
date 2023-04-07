@@ -14,10 +14,4 @@ export class DashboardComponent {
   constructor(private router: Router,private dataService: DataService){
     this.data = new DataService().getData();
   }
-
-  showDescriptionPage(itemData:any){
-    console.log(itemData);
-    this.dataService.setSharedData(itemData);
-    this.router.navigateByUrl('/detailed');
-  }
 }

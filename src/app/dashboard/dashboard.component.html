@@ -10,64 +10,14 @@
           <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">{{item.title}}</h2>
           <img src="{{item.imageUrlPreview!==undefined?item.imageUrlPreview:item.imageUrl}}" border-radius="50%">
           <p class="leading-relaxed text-base mb-4">{{item.description.slice(0,100)}}...</p>
-          <a href ="#" (click)="showDescriptionPage(item)" class="text-indigo-500 inline-flex items-center">Learn More
+          <a [routerLink]="['detailed']" [queryParams]="{blogNumber: item.serialNo}" class="text-indigo-500 inline-flex items-center">Learn More
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </a>
         </div>
-        <!-- <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">The Monolith</h2>
-          <img src="./assets/monolith.jpg" border-radius="50%">
-          <p class="leading-relaxed text-base mb-4">In Arthur C. Clarke's Space Odyssey, Monoliths are machines built by an unseen extraterrestrial species...</p>
-          <a href="./monolith" class="text-indigo-500 inline-flex items-center">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">The Mariana Trench</h2>
-          <img src="./assets/MTrench2.jpg" border-radius="50%">
-          <p class="leading-relaxed text-base mb-4">In 2016, marine biologists studying the Mariana Trench heard a strange, anomalous sound of unknown origin...</p>
-          <a href= "./MTrench" class="text-indigo-500 inline-flex items-center">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">The Red Sea</h2>
-          <img src="./assets/redsea2.jpg" border-radius="50%">
-          <p class="leading-relaxed text-base mb-4">A variety of exotic threads are woven into the tapestry that produce the Red Sea's unusual oceanographic...</p>
-          <a href="./redsea" class="text-indigo-500 inline-flex items-center">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">The Svalbard Island</h2>
-          <img src="./assets/svalbard.jpg" border-radius="50%">
-          <p class="leading-relaxed text-base mb-4">The northern parts of Norway are the best places in the world to see the northern lights...</p>
-          <a href= "./svalbard" class="text-indigo-500 inline-flex items-center">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">The Fairy Pools</h2>
-          <img src="./assets/FairyPools.jpg" border-radius="50%">
-          <p class="leading-relaxed text-base mb-4">At foot of the Black Cuillins near Glenbrittle are the Fairy Pools, beautifully crystal clear blue pools on the River Brittle....</p>
-          <a href= "./fairypools" class="text-indigo-500 inline-flex items-center">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div> -->
       </div>
-    <a href="./support">
+    <a routerLink="support">
     <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Support Us!</button>
     </a>
   </div>

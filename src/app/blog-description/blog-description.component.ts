@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { BlogData } from '../models/interfaces/blog.interface';
 
 
 @Component({
@@ -10,9 +12,23 @@ import { DataService } from '../data.service';
 export class BlogDescriptionComponent {
 
   data: any;
-  constructor(private dataService: DataService){ }
+  index!: String|null;
+  constructor(private dataService: DataService, private router: Router, private route: ActivatedRoute){ }
 
   ngOnInit(){
-    this.data = this.dataService.getData();
+    this.route.queryParamMap.subscribe(params => {
+      // Access the query parameter values
+      this.index = params.get('blogNumber');
+    });
+    if(this.index===undefined || this.index === null){
+      this.router.navigateByUrl("/")
+    }
+    else{
+      this.data = this.dataService.getIndexedData(this.index);
+      console.log(this.data);
+      if(this.data===undefined){
+        this.router.navigateByUrl("/")
+      }
+    }
   }
 }

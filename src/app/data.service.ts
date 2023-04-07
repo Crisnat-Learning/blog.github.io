@@ -7,8 +7,6 @@ import { BlogData } from './models/interfaces/blog.interface';
 })  
 export class DataService {
 
-  private sharedData: any;
-
   data: BlogData[] = [];
   constructor(){}
   
@@ -18,12 +16,17 @@ export class DataService {
   }
 
 
-  setSharedData(data: any) {
-    this.sharedData = data;
-  }
-
-  getSharedData() {
-    return this.sharedData;
+  getIndexedData(index:any) {
+    if(this.data === undefined || this.data.length === 0){
+      this.getData()
+    }
+    for(let obj of this.data){
+      console.log(obj);
+      if(obj.serialNo === Number(index)){
+        return obj;
+      }
+    }
+    return undefined;
   }
 
 
